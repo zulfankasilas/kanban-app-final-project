@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "general/header"}}
+</head>
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-gradient-to-tr from-blue-200 via-indigo-200 to-pink-200">
+        <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+            <h3 class="text-2xl font-bold text-center">Register Account</h3>
+            <form method="post" action="/register/process">
+                <div class="mt-4">
+                    <div>
+                        <label class="block" for="fullname">Fullname<label>
+                                <input type="text" placeholder="Type your fullname here" name="fullname" value=""
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label class="block" for="email">Email<label>
+                                <input type="text" placeholder="Type your email here" name="email" value=""
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block">Password<label>
+                                <input type="password" placeholder="Type password here" name="password" value=""
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="flex items-baseline justify-between">
+                        <button class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" type="submit">Register</button>
+                        <a href="/login" class="text-sm text-blue-600 hover:underline">Go to Login page</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
